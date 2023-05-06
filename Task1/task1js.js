@@ -71,6 +71,6 @@ $(document).ready(function(){
 
 })
 function startRebus(arg){
-$("#reb").attr("src",`Task1/rebuses/${arg}.jpg` )
+$("#reb").attr("src",`rebuses/${arg}.jpg` )
 }
 
