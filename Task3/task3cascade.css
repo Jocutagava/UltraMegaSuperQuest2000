@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(231, 245, 179);
+}
+.main-content{
+    display: grid;
+    grid-template-columns: 2fr 8fr 2fr;
+    justify-items: center;
+    align-items: center;
+    /* grid-template-rows: 1fr; */
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Quest{
+    font-size: 50px;
+    font-family: sans-serif;
+}
+.exercise{
+    margin-top: 20px;
+    
+}
+.block1{
+    margin-top: 20px;
+    padding-left: 7px ;
+    width: 800px;
+    background: #5eda8c  ;
+    color: white;
+    font-size: 20px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+}
+.block2{
+    width: 800px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background: #CDC5C3  ;
+    padding: 3.5px ;
+    
+    font-size: 21px;
+}
+
+.answerInput{
+    display: inline-block;
+
+}
+#answer{
+    border: none;
+    border-bottom: 1px solid gray;
+    width: 200px;
+    font-size: 20px;
+    outline:none;
+    background: none;
+   
+}
+#button{
+    /* position: relative;
+    bottom: 6px;
+    right: 4px; */
+    border: none;
+    background: #5eda8c  ;
+    
+    color: white;
+  
+    width: 50px;
+    height: 30px;
+}
+
+.progressBar{
+    /* display: flex;
+    flex-direction: column;
+    align-self:flex-start ;
+    text-align: center;
+    justify-self: center; */
+    /* position: fixed;
+    left: 100px;
+    bottom: 270px; */
+    text-align: center; 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-self: end;
+    margin-top: 30px;
+    
+    
+}
+
+.progressBar p{
+    margin-bottom: 20px;
+}
+.nextTask{
+   
+    width: 200px;
+    font-size: 30px;
+    color: white;
+    background: #5eda8c  ;
+
+    /* position: fixed;
+    right: 10px;
+    bottom: 400px; */
+    border-radius: 5px;
+    padding: 1px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+     align-self: end;
+}
+.nextTask a{
+    color: white;
+    text-decoration: none;
+}
+.column2{
+    align-self: start;
+}
+.Quiz{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.start{
+    width: 250px;
+    height: 120px;
+    background: #1b7c3f  ;
+
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sound{
+    margin: 30px;
+}
+.rulesText{
+    margin-top: 10px;
+}
+.board{
+    transform-style: preserve-3d;
+}
+
+.boards{
+    display: none;
+    gap: 5px;
+    width: 100%;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 100px);
+}
+.boards div{
+ text-align: center;
+ line-height: 100px;
+ cursor: pointer;
+ transition: all 0.5s;
+ transform-style: preserve-3d;
+}
+.board img{
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    max-height: 100%;
+}
+.back{
+    background-color: #ffffff;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+ .front{
+    background-color: #25577A;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    color: #ffffff;
+    font-weight: bold;
+}
+.flip{
+    transform: rotateY(180deg);
+}
