@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(179, 223, 245);
+}
+.main-content{
+    display: grid;
+    grid-template-columns: 2fr 8fr 2fr;
+    justify-items: center;
+    align-items: center;
+    /* grid-template-rows: 1fr; */
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Quest{
+    font-size: 50px;
+    font-family: sans-serif;
+}
+.exercise{
+    margin-top: 20px;
+    
+}
+.block1{
+    margin-top: 20px;
+    padding-left: 7px ;
+    width: 800px;
+    background: #0f4ba5  ;
+    color: white;
+    font-size: 20px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+}
+.block2{
+    width: 800px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background: #CDC5C3  ;
+    padding: 3.5px ;
+    
+    font-size: 20px;
+}
+
+.answerInput{
+    display: inline-block;
+
+}
+#answer{
+    border: none;
+    border-bottom: 1px solid gray;
+    width: 200px;
+    font-size: 20px;
+    outline:none;
+    background: none;
+   
+}
+#button{
+    /* position: relative;
+    bottom: 6px;
+    right: 4px; */
+    border: none;
+    background: #0f4ba5 ;
+    color: white;
+  
+    width: 50px;
+    height: 30px;
+}
+
+.progressBar{
+    /* display: flex;
+    flex-direction: column;
+    align-self:flex-start ;
+    text-align: center;
+    justify-self: center; */
+    /* position: fixed;
+    left: 100px;
+    bottom: 270px; */
+    text-align: center; 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-self: end;
+    margin-top: 30px;
+    
+    
+}
+
+.progressBar p{
+    margin-bottom: 20px;
+}
+.nextTask{
+   
+    width: 200px;
+    font-size: 30px;
+    color: white;
+    background-color:  hwb(11 6% 35%) ;
+    /* position: fixed;
+    right: 10px;
+    bottom: 400px; */
+    border-radius: 5px;
+    padding: 1px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+     align-self: end;
+}
+.nextTask a{
+    color: white;
+    text-decoration: none;
+}
+.column2{
+    align-self: start;
+}
+.Quiz{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.start{
+    width: 201px;
+    height: 67px;
+    background-color:  #0f4ba5;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    margin: 30px;
+}
+.sound{
+    margin: 30px;
+}
