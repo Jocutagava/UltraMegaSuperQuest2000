@@ -130,7 +130,7 @@ $(document).ready(function(){
 
 })
 function startRebus(arg){
-    $("#melody").attr("src",`/task2/sound/${arg}.mp3` )
+    $("#melody").attr("src",`Task2/sound/${arg}.mp3` )
     }
 
 function timer(){
