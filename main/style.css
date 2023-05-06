@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    font-family: 'Press Start 2P', cursive;
+}
+.contur{
+   
+    border: 4px solid black;
+    animation: bord 2s infinite;
+}
+header{
+    width: 100%;
+    color: yellow;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 20vh;
+    
+}
+header h1{
+    margin: 15px;
+    letter-spacing: 4px;
+}
+.main{
+    color: green;
+     width: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     height: 79vh; 
+}
+.link{
+    color: green;
+    text-decoration: none;
+    font-size: 4rem;
+    letter-spacing: 1px;
+    animation: rainbow 3s infinite;
+}
+@keyframes rainbow{
+ 0%{color:rgb(255, 0, 0);}
+ 12%{color:rgb(255, 98, 0);}
+ 25%{color:rgb(255, 255, 0);}
+ 50%{color:rgb(72, 255, 0);}
+ 62%{color:rgb(0, 145, 255);}
+ 85%{color:rgb(0, 60, 255);}
+ 95%{color:rgb(149, 0, 255);}
+ 100%{color:rgb(255, 0, 0);}
+}
+@keyframes bord{
+    0%{border-color:rgb(255, 0, 0);}
+    12%{border-color:rgb(255, 98, 0);}
+    25%{border-color:rgb(255, 255, 0);}
+    50%{border-color:rgb(72, 255, 0);}
+    62%{border-color:rgb(0, 145, 255);}
+    85%{border-color:rgb(0, 60, 255);}
+    95%{border-color:rgb(149, 0, 255);}
+    100%{border-color:rgb(255, 0, 0);}
+   }
